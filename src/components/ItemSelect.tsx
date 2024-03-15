@@ -25,25 +25,25 @@ export default function ItemSelect({
     >
       <h3>{title}</h3>
       <input
-        className="w-5 h-5  rounded-md appearance-none border border-black/50 group-hover:border-black transition checked:border-black  peer relative before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:opacity-0 before:transition-opacity "
+        className="w-6 h-6  rounded-md appearance-none border border-black/50 group-hover:border-black transition checked:border-blue-700  peer relative before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:bg-blue-700 checked:hover:bg-blue-700 cursor-pointer"
         type="checkbox"
         defaultChecked={checked}
         checked={specialSelector ? c : checked}
       ></input>
-      <span className="absolute text-black transition-opacity group-hover:opacity-30 opacity-0 pointer-events-none top-2/4 right-1 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+      <span className="absolute  transition-opacity group-hover:opacity-30 opacity-0 pointer-events-none top-2/4 -right-[7px] -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100 peer-checked:fill-white">
         <svg
+          className="h-7 w-7"
+          version="1.1"
+          id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-3.5 w-3.5"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          stroke="currentColor"
-          strokeWidth="1"
+          viewBox="0 0 50 50"
+          enable-background="new 0 0 50 50"
         >
           <path
-            fillRule="evenodd"
-            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-            clipRule="evenodd"
-          ></path>
+            d="M40.267,14.628L20.974,33.921l-9.293-9.293c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l10,10
+	c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l20-20c0.391-0.391,0.391-1.023,0-1.414S40.657,14.237,40.267,14.628z
+	"
+          />
         </svg>
       </span>
     </div>
