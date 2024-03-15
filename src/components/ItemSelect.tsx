@@ -21,11 +21,11 @@ export default function ItemSelect({
         setChecked && setChecked();
         specialSelector && setC(!c);
       }}
-      className="flex justify-between w-full py-2 px-2 rounded-lg items-center cursor-pointer hover:bg-gray/20 transition group relative"
+      className="flex justify-between w-full py-2 px-2 rounded-lg items-center cursor-pointer hover:bg-gray/10 transition group relative"
     >
       <h3>{title}</h3>
       <input
-        className="w-6 h-6  rounded-md appearance-none border border-black/50 group-hover:border-black transition checked:border-blue-700  peer relative before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:bg-blue-700 checked:hover:bg-blue-700 cursor-pointer"
+        className="w-6 h-6  rounded-md appearance-none border border-black/50 group-hover:border-black checked:group-hover:border-blue-700 transition checked:border-blue-700  peer relative before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:bg-blue-700 checked:hover:bg-blue-700 cursor-pointer"
         type="checkbox"
         defaultChecked={checked}
         checked={specialSelector ? c : checked}
