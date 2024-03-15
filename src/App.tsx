@@ -3,7 +3,6 @@ import Selector from "./components/Selector";
 
 function App() {
   //To make it dynamic, I create pages as how one would receive them from the server. I'm using useState so that I can change the checked property.
-
   const [pages, setPages] = useState([
     { id: 1, title: "Page 1", checked: true },
     { id: 2, title: "Page 2", checked: false },

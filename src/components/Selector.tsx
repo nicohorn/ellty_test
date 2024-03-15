@@ -1,6 +1,7 @@
 import React from "react";
 import ItemSelect from "./ItemSelect";
 
+/** This is the main component, it maps through the pages received and creates an ItemSelect for each one, passing to them the corresponding props. It also creates an special ItemSelect on top. This component also hosts the whole functionality of how the items get checked and also it's responsible for updating the state variable pages. */
 export default function Selector({
   pages,
   setChecked,

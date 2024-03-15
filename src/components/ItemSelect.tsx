@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+/** This item will display the checkbox and the title. According to which of the two functions it receives, it behaves normally (checking or unchecking itself) or checking all of the rest.*/
 export default function ItemSelect({
   title,
   checked,
@@ -15,6 +16,7 @@ export default function ItemSelect({
   return (
     <div
       onClick={() => {
+        //Two set of parenthesis because I'm making use of JavaScript closures.
         specialSelector && specialSelector()(c);
         setChecked && setChecked();
         specialSelector && setC(!c);
