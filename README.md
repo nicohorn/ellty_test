@@ -1,6 +1,6 @@
 # Ellty test
 
-[Live Demo](https://github.com/facebook/create-react-app](https://fastidious-lamington-ed3fd8.netlify.app/).
+([Live Demo](https://github.com/facebook/create-react-app](https://fastidious-lamington-ed3fd8.netlify.app/)).
 
 This project consist of a simple React component called ```Selector```, which receives as props an array of pages.
 These pages have the following structure
